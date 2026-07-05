@@ -1,38 +1,14 @@
-import { join } from 'path'
-import { defineConfig } from 'vite'
-
-function publicDirIndex() {
-  return {
-    name: 'public-dir-index',
-    async configureServer(server) {
-      const { existsSync, readFileSync } = await import('fs')
-      const root = process.cwd()
-      server.middlewares.use((req, res, next) => {
-        const url = req.url.split('?')[0]
-        if (url.endsWith('/')) {
-          const candidate = join(root, 'public', url.slice(1), 'index.html')
-          if (existsSync(candidate)) {
-            res.setHeader('Content-Type', 'text/html')
-            res.end(readFileSync(candidate))
-            return
-          }
-        }
-        next()
-      })
-    },
-  }
-}
+import { resolve, dirname } from "path";
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  appType: 'mpa',
-  plugins: [publicDirIndex()],
   build: {
-    rollupOptions: {
+    rolldownOptions: {
       input: {
-        main:  'index.html',
-        games: 'games/index.html',
-        apps:  'apps/index.html',
+        main: resolve(import.meta.dirname, "index.html"),
+        games: resolve(import.meta.dirname, "games/index.html"),
+        apps: resolve(import.meta.dirname, "apps/index.html"),
       },
     },
   },
-})
+});
