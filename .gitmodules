@@ -1,0 +1,3 @@
+[submodule "public/games/roulette"]
+	path = public/games/roulette
+	url = https://github.com/DangItsTY/roulette
