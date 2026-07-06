@@ -1,0 +1,5 @@
+# Vanity URLs that mask a project's real path, e.g. /roulette instead of
+# /games/roulette. Keep this in sync with VANITY_ROUTES in vite.config.js,
+# which does the equivalent rewrite in dev.
+/roulette /roulette/ 301
+/roulette/* /games/roulette/:splat 200
