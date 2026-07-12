@@ -3,3 +3,5 @@
 # which does the equivalent rewrite in dev.
 /roulette /roulette/ 301
 /roulette/* /games/roulette/:splat 200
+/mahjong /mahjong/ 301
+/mahjong/* /games/mahjong/:splat 200

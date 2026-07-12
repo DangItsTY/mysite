@@ -1,3 +1,6 @@
 [submodule "public/games/roulette"]
 	path = public/games/roulette
 	url = https://github.com/DangItsTY/roulette
+[submodule "public/games/mahjong"]
+	path = public/games/mahjong
+	url = https://github.com/DangItsTY/mahjong

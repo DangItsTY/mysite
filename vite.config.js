@@ -10,6 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // public/_redirects, which does the equivalent rewrite in production.
 const VANITY_ROUTES = {
   "/roulette": "/games/roulette",
+  "/mahjong": "/games/mahjong",
 };
 
 // Serve public/<path>/index.html for directory requests, matching prod host behavior.
