@@ -1,19 +1,21 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  --bg:           #0a0a0f;
-  --surface:      #13131a;
-  --border:       #2a2a3a;
-  --text:         #e8e8f0;
-  --text-muted:   #888899;
-  --accent:       #6366f1;
+  --bg: #0a0a0f;
+  --surface: #13131a;
+  --border: #2a2a3a;
+  --text: #e8e8f0;
+  --text-muted: #888899;
+  --accent: #6366f1;
   --accent-hover: #818cf8;
-  --radius:       12px;
-  --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --radius: 12px;
+  --font: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 body {
@@ -32,7 +34,7 @@ header {
   padding: 0 2rem;
   position: sticky;
   top: 0;
-  background: rgba(10,10,15,0.85);
+  background: rgba(10, 10, 15, 0.85);
   backdrop-filter: blur(10px);
   z-index: 10;
 }
@@ -142,7 +144,9 @@ main {
   text-decoration: none;
   color: var(--text);
   display: block;
-  transition: border-color 0.15s, transform 0.15s;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
 }
 
 .card:hover {
@@ -229,6 +233,10 @@ footer {
 
 /* ── Responsive ── */
 @media (max-width: 600px) {
-  main { padding: 2rem 1.25rem; }
-  header { padding: 0 1.25rem; }
+  main {
+    padding: 2rem 1.25rem;
+  }
+  header {
+    padding: 0 1.25rem;
+  }
 }
