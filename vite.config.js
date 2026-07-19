@@ -11,6 +11,16 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const VANITY_ROUTES = {
   "/roulette": "/games/roulette",
   "/mahjong": "/games/mahjong",
+  "/one": "/games/one",
+  "/oneschema": "/games/one/oneschema",
+  "/onestatus": "/games/one/onestatus",
+  "/onelist": "/games/one/onelist",
+  "/textboard": "/games/one/textboard",
+  "/manylists": "/games/one/manylists",
+  "/noted": "/games/one/noted",
+  "/noted2": "/games/one/noted2",
+  "/export": "/games/one/export",
+  "/import": "/games/one/import",
 };
 
 // Serve public/<path>/index.html for directory requests, matching prod host behavior.

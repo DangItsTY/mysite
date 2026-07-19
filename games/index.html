@@ -1,46 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/src/style.css">
-  <title>Games · My Projects</title>
-</head>
-<body>
-  <header>
-    <nav>
-      <a href="/" class="logo">My Projects</a>
-      <div class="nav-links">
-        <a href="/games/" class="active">Games</a>
-        <a href="/apps/">Apps</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>Games · My Projects</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/" class="logo">My Projects</a>
+        <div class="nav-links">
+          <a href="/games/" class="active">Games</a>
+          <a href="/apps/">Apps</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-hero">
+        <h1>Games</h1>
+        <p>Browser-based games built with web technologies.</p>
       </div>
-    </nav>
-  </header>
 
-  <main>
-    <div class="page-hero">
-      <h1>Games</h1>
-      <p>Browser-based games built with web technologies.</p>
-    </div>
+      <div class="card-grid">
+        <a href="/roulette/" class="card">
+          <div class="card-icon">🎡</div>
+          <h3>Roulette</h3>
+          <p>
+            Track numbers on a roulette wheel during a live game. Installable as
+            a PWA.
+          </p>
+          <div class="card-tags"><span class="tag">PWA</span></div>
+        </a>
+        <a href="/mahjong/" class="card">
+          <div class="card-icon">🀄</div>
+          <h3>Mahjong</h3>
+          <p>Learn how to play Mahjong!</p>
+          <div class="card-tags"><span class="tag">boardgame</span></div>
+        </a>
+        <a href="/one/" class="card">
+          <div class="card-icon">📜</div>
+          <h3>one</h3>
+          <p>Your one stop solution for all of your life needs</p>
+          <div class="card-tags"><span class="tag">pkm</span></div>
+        </a>
+      </div>
+    </main>
 
-    <div class="card-grid">
-      <a href="/roulette/" class="card">
-        <div class="card-icon">🎡</div>
-        <h3>Roulette</h3>
-        <p>Track numbers on a roulette wheel during a live game. Installable as a PWA.</p>
-        <div class="card-tags"><span class="tag">PWA</span></div>
-      </a>
-      <a href="/mahjong/" class="card">
-        <div class="card-icon">🀄</div>
-        <h3>Mahjong</h3>
-        <p>Learn how to play Mahjong!</p>
-        <div class="card-tags"><span class="tag">boardgame</span></div>
-      </a>
-    </div>
-  </main>
-
-  <footer>
-    <p>Built with Vite</p>
-  </footer>
-</body>
+    <footer>
+      <p>Built with Vite</p>
+    </footer>
+  </body>
 </html>
